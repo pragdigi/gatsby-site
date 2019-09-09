@@ -6,11 +6,10 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Title from "../components/title"
 
-/* const IndexPage */
-export default ({data}) => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Title text={data.site.siteMetadata.title}></Title>
+    <Title text="Hi people"></Title>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
@@ -21,14 +20,4 @@ export default ({data}) => (
   </Layout>
 )
 
-export const query = graphql `
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
-
-/* export default IndexPage */
+export default IndexPage
