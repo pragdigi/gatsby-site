@@ -1,0 +1,27 @@
+@import '../styles/global';
+
+$footer-height: 100px;
+.a {
+    color: white;
+    background-color: white;
+    
+}
+.container {
+    background-color: rebeccapurple;
+    width: 100%;
+    height: $footer-height;
+    position: absolute;
+    bottom: 0;
+    
+    .footer {
+        margin: 0 auto;
+        max-width: 960px;
+        height: $footer-height;
+        line-height: $footer-height;
+        background-color: rebeccapurple;
+        color: white !important;
+        text-decoration: none;
+        padding: 0px 20px 0px 20px;
+    }
+    
+}
